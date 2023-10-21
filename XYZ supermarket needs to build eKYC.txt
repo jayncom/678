@@ -1,0 +1,51 @@
+XYZ supermarket needs to build eKYC web site to evaluate the faith customer. The web site has the following functions such as customer management , Consultant management ,sale management and statistic reports about faithful , sale, revenue report.
+Customer management
+The customer can login to the website to view information , the list of orders ,award points and the money cashback.
+The customer information will update on website as following:
+-	ID scan , the system will extract information and show it on the screen to view and edit
+-	Capture face images to authenticate face data.
+If the customers have bought one or many times at supermarket. Then customer information will be shown as : Full name , Cell phone , Address, Award Points , Product information , money.
+The system allows website management team to delete , update and insert customer information.
+
+Consultant management 
+Show the list of consutants near the customer location. The website allows customers to view the consultant’s are allowed to choose the consultant which is suitable as theirs expected. The website supports customers to chat or call cell phone for consutants. After meeting with consultants, the customers can give the points to the consultant based on their satisfaction.
+The list of consultants will be updated , inserted or deleted by website to manage sales and orders by customers. After logging in successfully, they can view the number of orders in a day, the number of orders to process manually, the tasks are over deadline but have not yet been processed. The team can view the orders in detail and they can process them when they need such as update information the orders. The team can give award points to the customers based on the orders and the faith of the customers. When the award points reach 1000 points, they will be exchanged to 100.000 VND. Weekly , the team makes statistical reports to the company leads about sales, revenue , and the faith of customers. The faith will evaluate by award points or award money which the customers receive . Besides ,they can view the list of historical calls to support customers , the list of consultant meetings and the comments or the points of customers to consultants . To take care of the customers. The team also manages the birthday of customers. The system will alert on the website when the birthday of customers is coming. The team will send the birthday congratulation to the customers by email or SMS. They also chat or call customers in the website.
+To manage the website and network, the administrators will take care of it. They can create , update and delete accounts for customers , management team , consultants . Depending on the permissions of the user , it will be limited rights or full access to website. They can reset their password for them when the need by email or SMS.
+The website is written in C# language using MVC model and  framework Hibernate in Model layer. Data is stored by NAT and about 10GB/year.
+Mail system uses for the users which access by inside and outside conpany . VoIP phone system is used for the company. There are 2 mail servers running load balancing and located in DMZ. Similarly , there are 2 web servers using this website. These web servers run in Stand-by mode and are in LAN. There are 2 database servers installing SQL Server abd the other 2 server installing Oracle database . All of them are in LAN and run by load balancing mode. There are 2 leased line connected to 2 routers and running load balancing mode. The network has one firewall to control the sercurity of the system.
+All of the services run 24/24 , 7 days a week and 365 days a year. The system, website and network have been managed by administrators
+
+
+
+
+============================================================================================================================================
+Vẽ chi tiết Biểu đồ use case diagram với yêu cầu như sau "Mượn sách và trả sách trong hệ thống thư viện" bằng PlantUML
+
+Vẽ chi tiết Biểu đồ sequence diagram "khi quản trị viên cập nhật thông tin thủ thư trong hệ thống" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ activity diagram "quản lý thông tin sách trong hệ thống" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ state diagram "khi thủ thư xóa thẻ thư viện của độc giả trong hệ thống này" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ component diagram "thành phần cho triển khai phần cứng" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ deployment diagram "thành phần cho triển khai phần cứng" bằng PlantUML 
+
+
+XYZ supermarket cần xây dựng một trang web eKYC để đánh giá lòng tin của khách hàng. Trang web này có các chức năng sau: quản lý khách hàng, quản lý tư vấn, quản lý bán hàng và báo cáo thống kê về sự trung thành, doanh số bán hàng và doanh thu.
+
+Quản lý Khách hàng
+Khách hàng có thể đăng nhập vào trang web để xem thông tin, danh sách đơn hàng, điểm thưởng và tiền cashback. Thông tin của khách hàng sẽ được cập nhật trên trang web như sau:
+
+Quét ID, hệ thống sẽ trích xuất thông tin và hiển thị nó trên màn hình để xem và chỉnh sửa.
+Chụp hình khuôn mặt để xác minh dữ liệu khuôn mặt.
+Nếu khách hàng đã mua hàng tại siêu thị một hoặc nhiều lần, thông tin khách hàng sẽ hiển thị như: Họ tên đầy đủ, Số điện thoại, Địa chỉ, Điểm thưởng, Thông tin sản phẩm, tiền.
+Hệ thống cho phép đội ngũ quản lý trang web xóa, cập nhật và thêm thông tin khách hàng.
+Quản lý Tư vấn
+Hiển thị danh sách các tư vấn gần vị trí khách hàng. Trang web cho phép khách hàng xem danh sách tư vấn và chọn tư vấn phù hợp với mong đợi của họ. Trang web hỗ trợ khách hàng trò chuyện hoặc gọi điện thoại cho tư vấn. Sau cuộc họp với tư vấn, khách hàng có thể đánh giá tư vấn dựa trên sự hài lòng của họ.
+Danh sách tư vấn sẽ được cập nhật, thêm mới hoặc xóa bỏ bởi trang web để quản lý bán hàng và đơn đặt hàng của khách hàng. Sau khi đăng nhập thành công, họ có thể xem số lượng đơn hàng trong một ngày, số lượng đơn hàng cần xử lý thủ công, các công việc đã quá hạn nhưng chưa được xử lý. Đội ngũ có thể xem chi tiết đơn đặt hàng và xử lý chúng khi cần, ví dụ như cập nhật thông tin đơn đặt hàng. Đội ngũ có thể tặng điểm thưởng cho khách hàng dựa trên đơn đặt hàng và lòng tin của khách hàng. Khi số điểm thưởng đạt 1000 điểm, chúng sẽ được đổi thành 100.000 VND. Hàng tuần, đội ngũ tạo báo cáo thống kê cho lãnh đạo công ty về doanh số bán hàng, doanh thu và lòng tin của khách hàng. Lòng tin sẽ được đánh giá thông qua điểm thưởng hoặc tiền thưởng mà khách hàng nhận được. Bên cạnh đó, họ có thể xem danh sách cuộc gọi lưu trữ để hỗ trợ khách hàng, danh sách cuộc họp với tư vấn và các ý kiến hoặc điểm của khách hàng về tư vấn. Để chăm sóc khách hàng, đội ngũ cũng quản lý sinh nhật của khách hàng. Hệ thống sẽ thông báo trên trang web khi sinh nhật của khách hàng sắp đến. Đội ngũ sẽ gửi lời chúc mừng sinh nhật đến khách hàng qua email hoặc tin nhắn SMS. Họ cũng trò chuyện hoặc gọi điện thoại cho khách hàng trên trang web.
+
+Để quản lý trang web và mạng, các quản trị viên sẽ chịu trách nhiệm. Họ có thể tạo, cập nhật và xóa tài khoản cho khách hàng, đội quản lý và tư vấn. Tùy thuộc vào quyền của người dùng, họ sẽ bị giới hạn quyền hoặc có quyền truy cập đầy đủ vào trang web. Họ có thể đặt lại mật khẩu cho họ khi cần thông qua email hoặc SMS.
+Trang web được viết bằng ngôn ngữ C# sử dụng mô hình MVC và framework Hibernate ở tầng Mô hình. Dữ liệu được lưu trữ bởi NAT và khoảng 10GB/năm.
+Hệ thống email được sử dụng cho người dùng truy cập từ trong và ngoài công ty. Hệ thống điện thoại VoIP được sử dụng cho công ty. Có 2 máy chủ email chạy cân bằng tải và nằm trong DMZ. Tương tự, có 2 máy chủ web sử dụng trang web này. Những máy chủ web này chạy ở chế độ chờ sẵn và nằm trong mạng LAN. Có 2 máy chủ cơ sở dữ liệu cài đặt SQL Server và 2 máy chủ cài đặt cơ sở dữ liệu Oracle. Tất cả chúng đều nằm trong mạng LAN và chạy ở chế độ cân bằng tải. Có 2 đường thuê kết nối đến 2 bộ định tuyến và chạy ở chế độ cân bằng tải. Mạng có một bức tường lửa để kiểm soát bảo mật của hệ thống.
+Tất cả các dịch vụ chạy 24/24, 7 ngày một tuần và 365 ngày trong năm. Hệ thống, trang web và mạng đều được quản lý bởi các quản trị viên.

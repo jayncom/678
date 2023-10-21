@@ -1,0 +1,25 @@
+The XYZ university has 300 peoples including many departments such as Electronic, Computer Science, Data Science, Business, Accounting departments, etc… 
+There are a lot of severs in this university as follows:
+- Two web servers are used for university web site running load balancing. Web sites are built by Java technology including JSP, Spring, Java Bean. They connect to Oracle 
+database by 1521 port and run-on APACHE software. This web uses to marketing, teacher, and employee recruitment. Web site run on HTTPS protocol with 443 port. Web site is written with 3-layer model, where the lowest layer using Java Bean, the middle layer using Spring and the other using JSF
+- Two mail server providing email for all people in this university running Load 
+balancing. Mail server uses Microsoft Exchange. All people have one local email. All mail servers provide services such as POP3 port 25, IMAP with port 210 and SMTP with port 110.
+- One Server for VOIP (telephone) for all departments using to call. It uses SIP protocol and runs on port 310.
+- Two oracle database servers are used for university web sites and run on Stand-by mode.
+- One web server for student web application. The student can use the web site to registration, tuition payment, view scores and view the results of learning. Student application built as MVC model with C# and connect to SQL database server. This application runs on IIS. Assuming that SQL connects to web site by port 1021, web site running on HTTP protocol with port 80.
+
+
+=================================================================================================================================================
+
+Vẽ chi tiết Biểu đồ component diagram "thành phần cho triển khai phần cứng" bằng PlantUML bao gồm các giao thức và interface
+
+
+Trường Đại học XYZ có 300 người bao gồm nhiều phòng ban như Khoa Điện tử, Khoa Khoa học máy tính, Khoa Khoa học Dữ liệu, Khoa Kinh doanh, Khoa Kế toán, v.v.
+
+Trường này sử dụng nhiều máy chủ như sau:
+
+Hai máy chủ web được sử dụng để chạy trang web của trường bằng cân bằng tải. Trang web được xây dựng bằng công nghệ Java bao gồm JSP, Spring, Java Bean. Chúng kết nối đến cơ sở dữ liệu Oracle qua cổng 1521 và chạy trên phần mềm APACHE. Trang web này được sử dụng cho mục đích tiếp thị, giảng dạy và tuyển dụng nhân viên. Trang web chạy trên giao thức HTTPS với cổng 443. Trang web được viết theo mô hình 3 tầng, trong đó tầng thấp nhất sử dụng Java Bean, tầng giữa sử dụng Spring và tầng còn lại sử dụng JSF.
+Hai máy chủ email cung cấp dịch vụ email cho tất cả mọi người trong trường bằng cân bằng tải. Máy chủ email sử dụng Microsoft Exchange. Mọi người đều có một hộp thư email cục bộ. Tất cả máy chủ email cung cấp dịch vụ như cổng POP3 25, IMAP với cổng 210 và SMTP với cổng 110.
+Một máy chủ cho VOIP (điện thoại) cho tất cả các phòng ban để thực hiện cuộc gọi. Nó sử dụng giao thức SIP và chạy trên cổng 310.
+Hai máy chủ cơ sở dữ liệu Oracle được sử dụng cho trang web của trường và chạy ở chế độ chờ đợi.
+Một máy chủ web cho ứng dụng web của sinh viên. Sinh viên có thể sử dụng trang web này để đăng ký, thanh toán học phí, xem điểm số và kết quả học tập. Ứng dụng sinh viên được xây dựng dưới dạng mô hình MVC bằng C# và kết nối đến máy chủ cơ sở dữ liệu SQL. Ứng dụng này chạy trên IIS. Giả sử rằng SQL kết nối với trang web bằng cổng 1021, trang web chạy trên giao thức HTTP với cổng 80.

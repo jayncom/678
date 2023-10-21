@@ -1,0 +1,13 @@
+vẽ use case bằng plantuml
+
+vẽ Activity Diagrams bằng plantuml
+
+vẽ sequence diagram bằng plantuml
+
+vẽ state model diagram bằng plantuml
+
+
+
+vẽ component diagram bằng plantuml
+
+vẽ deployment diagram bằng plantuml

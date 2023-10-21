@@ -1,0 +1,62 @@
+Vẽ chi tiết Biểu đồ use case diagram với yêu cầu như sau :"use case diagram for Book loan and Book return management in this system" bằng PlantUML
+
+Thông tin như sau:
+The ABC University want to build a Web site for library management, including 3 activities: Book information management, Reader information management, Book loan and Book return management. Students who want to borrow books from the library must first register for a library card by class, library card includes information (Reader ID, full name, class name, date of birth, gender).
+
+Then the librarian enters information about the library card into the system ad prints the library card to give to the students after one month. When the information about the library card is wrong, the systems allows to remove the library card of reader.
+
+The books in the library a managed by title, each book in the library has many different copies. Information about book titles includes (Title ID, Reader ID, publisher, page number, size, authors, number of book), Information about book copies including(Copy ID, Book ID, condition status, Date). 
+When the library put new book into the library, the librarian is responsible for intering the book information into the library. If the book information is changed or removed from the library, the librarian correct the book information or delete the book from the library. 
+
+The library managed books by areas, the titles are divided into different areas. Information of one areas includes (Area ID, major name, description).
+Each reader can only borrow one book at a time. When a reader wants to borrow a book, he/she can find a book in the library and write information on the loan slip, including the book's ID, the reader's ID, and send it to the librarian. 
+
+The librarian records the loan slip Information to the system, keeps the reader's card and delivers the book to the reader. Borrowing slip information includes (Book ID, reader ID, library ID,, loan date, status). 
+When a reader returns a book, the librarian performs the book return function to record the return
+status of the book for the loan slip. Periodically, the librarian must make statistical reports and send to the library leaders the following reports: Information about the most lent books, information about readers who have not returned books.
+To manage end users, in the library there is a staff member who plays the role of administrator. 
+This employee has the right to manage information of end users. If there is a new librarian, the administrator updates librarian information to the system, creates an account and grants permissions to library staff. When library staff information is incorrect or removed from the system, the administrator edits or deletes this librarian’s information frora the system.  The administrator and the librarian must log in before doing any task.
+
+This application must run as fast as possible and 24/24, 7 days over one week. It allows more than 1000 people accessing at the same time. The system ensures the high available and high security. There are 2 web server and 2 SQL server database server running standby mode. 
+
+Besides, there is one firewall for security monitoring, There are 2 FTTH with bandwith about 10Mbs provides by 2 ISP (FPT & Viettel) which connected to 2 different routers running standby mode This application is built by MVC model with Java language and data storage is average 1TB/year. This system and ess backup by daily, weekly and yearly.
+
+
+================================================================================
+Câu 1: Vui lòng vẽ biểu đồ use case cho quản lý mượn và trả sách trong hệ thống này.
+
+Câu 2: Vui lòng vẽ biểu đồ trình tự khi quản trị viên cập nhật thông tin thủ thư trong hệ thống này.
+
+Câu 3: Vui lòng vẽ biểu đồ hoạt động cho quản lý thông tin sách trong hệ thống này.
+
+Câu 4: Vui lòng vẽ biểu đồ trạng thái khi thủ thư xóa thẻ thư viện của độc giả trong hệ thống này.
+
+Câu 5: Vui lòng vẽ biểu đồ thành phần cho triển khai phần cứng.
+
+Vẽ chi tiết Biểu đồ use case diagram với yêu cầu như sau "Mượn sách và trả sách trong hệ thống thư viện" bằng PlantUML
+
+Vẽ chi tiết Biểu đồ sequence diagram "khi quản trị viên cập nhật thông tin thủ thư trong hệ thống" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ activity diagram "quản lý thông tin sách trong hệ thống" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ state diagram "khi thủ thư xóa thẻ thư viện của độc giả trong hệ thống này" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ component diagram với yêu cầu "thành phần cho triển khai phần cứng" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ deployment diagram "thành phần cho triển khai phần cứng" bằng PlantUML 
+
+Vẽ chi tiết Biểu đồ component diagram với yêu cầu "Triển khai phần cứng của hệ thống" bằng PlantUML 
+
+Đại học ABC muốn xây dựng một trang web quản lý thư viện, bao gồm 3 hoạt động: Quản lý thông tin sách, Quản lý thông tin độc giả, Quản lý mượn và trả sách. Sinh viên muốn mượn sách từ thư viện phải đăng ký thẻ thư viện theo lớp, thẻ thư viện bao gồm thông tin (Mã độc giả, họ tên đầy đủ, tên lớp, ngày tháng năm sinh, giới tính).
+
+Sau đó, thủ thư nhập thông tin về thẻ thư viện vào hệ thống và in thẻ thư viện để giao cho sinh viên sau một tháng. Khi thông tin về thẻ thư viện không chính xác, hệ thống cho phép loại bỏ thẻ thư viện của độc giả.
+
+Các cuốn sách trong thư viện được quản lý theo tựa đề, mỗi cuốn sách trong thư viện có nhiều bản sao khác nhau. Thông tin về tựa sách bao gồm (Mã tựa sách, Mã độc giả, nhà xuất bản, số trang, kích thước, tác giả, số lượng sách), Thông tin về bản sao sách bao gồm (Mã bản sao, Mã sách, tình trạng, Ngày). Khi thư viện đưa sách mới vào thư viện, thủ thư có trách nhiệm nhập thông tin sách vào thư viện. Nếu thông tin sách bị thay đổi hoặc loại bỏ khỏi thư viện, thủ thư sẽ chỉnh sửa thông tin sách hoặc xóa sách khỏi thư viện.
+
+Thư viện quản lý sách theo các khu vực, tựa sách được chia thành các khu vực khác nhau. Thông tin về một khu vực bao gồm (Mã khu vực, tên ngành, mô tả). Mỗi độc giả chỉ được mượn một cuốn sách vào một thời điểm. Khi độc giả muốn mượn sách, anh/chị ấy có thể tìm sách trong thư viện và viết thông tin vào phiếu mượn, bao gồm Mã sách, Mã độc giả, và gửi nó đến thủ thư. Thủ thư sẽ ghi lại thông tin phiếu mượn vào hệ thống, giữ lại thẻ độc giả và giao sách cho độc giả. Thông tin phiếu mượn bao gồm (Mã sách, Mã độc giả, Mã thư viện, ngày mượn, trạng thái). Khi độc giả trả lại sách, thủ thư thực hiện chức năng trả sách để ghi lại trạng thái trả sách cho phiếu mượn. Định kỳ, thủ thư phải tạo báo cáo thống kê và gửi cho lãnh đạo thư viện các báo cáo sau: Thông tin về sách được mượn nhiều nhất, thông tin về độc giả chưa trả sách.
+
+Để quản lý người dùng cuối, trong thư viện có một nhân viên đóng vai trò quản trị viên. Nhân viên này có quyền quản lý thông tin người dùng cuối. Nếu có thủ thư mới, quản trị viên cập nhật thông tin thủ thư vào hệ thống, tạo tài khoản và cấp quyền cho nhân viên thư viện. Khi thông tin nhân viên thư viện không chính xác hoặc bị xóa khỏi hệ thống, quản trị viên chỉnh sửa hoặc xóa thông tin thủ thư này khỏi hệ thống. Quản trị viên và thủ thư phải đăng nhập trước khi thực hiện bất kỳ nhiệm vụ nào.
+
+Ứng dụng này phải hoạt động càng nhanh càng tốt và 24/24, 7 ngày trong một tuần. Nó cho phép hơn 1000 người truy cập cùng một lúc. Hệ thống đảm bảo tính sẵn sàng và tính bảo mật cao. Có 2 máy chủ web và 2 máy chủ cơ sở dữ liệu SQL hoạt động dự phòng
+
+Bên cạnh đó, có một bộ tường lửa để theo dõi bảo mật. Có 2 đường truyền FTTH với băng thông khoảng 10Mbps do 2 nhà cung cấp dịch vụ Internet (FPT và Viettel) cung cấp, được kết nối với 2 bộ định tuyến khác nhau hoạt động ở chế độ chờ. Ứng dụng này được xây dựng bằng mô hình MVC với ngôn ngữ Java và lưu trữ dữ liệu trung bình khoảng 1TB mỗi năm. Hệ thống này được sao lưu hàng ngày, hàng tuần và hàng năm.
